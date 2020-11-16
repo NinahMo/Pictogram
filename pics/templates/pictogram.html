@@ -1,1 +1,62 @@
-showcase
+{% extends "base.html" %}
+{% load cloudinary %}
+{% load static %}
+{% block content %}
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Cute+Font|Merienda");
+    @import url("https://fonts.googleapis.com/css?family=Cute+Font|Almendra");
+    
+    body{
+        background-color: rgb(46, 82, 82);
+        font-family: 'Almendra', Courier, monospace;
+    }    
+
+    #transparent {
+        background-color: transparent;
+    }
+    
+    h1 {
+        color:black;
+    }
+    
+    h5 {
+        color: black;
+        letter-spacing: 5px;
+        font-family: 'Almendra', Courier, monospace;
+        -webkit-text-decoration-color: salmon;
+        text-decoration-color: rgb(46, 82, 82);
+        -webkit-text-decoration-style: wavy;
+        text-decoration-style: wavy;
+    }
+
+#con {
+    letter-spacing: 5px;
+    font-family: 'Almendra';
+    text-decoration: underline;
+    -webkit-text-decoration-color: salmon;
+    text-decoration-color: rgb(139, 94, 88);
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+}
+</style>
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <h1 class="text-center my-5" id="con">Pictogram</h1>
+    </div>
+    <div class="row">
+        {% for image_item in images %}
+        <div class="col-sm-4 my-4 animate__animated animate__fadeIn animate__delay-1s animate__animated animate__fadeIn animate__fadeInUp">
+            <div class="card" style="width: 25rem;" id="transparent">
+                <img src="{{ image_item.image.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ml-2">{{ image_item.name }}</h5>
+                    <a href="{% url 'show' image_item.id %}" class=" my-3 card-link"><button type="button" class="btn btn-deep-orange">View</button></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

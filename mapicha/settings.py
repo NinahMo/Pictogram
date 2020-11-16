@@ -134,5 +134,5 @@ STATICFILES_DIRS = [
 cloudinary.config( 
   cloud_name = "ninah", 
   api_key = "943776655366697", 
-  api_secret = "71gRJya0jqBiF094H5Iz7PaaCvk" 
+  api_secret = "71gRJya0jqBiF094H5Iz7PaaCvk",
 )
