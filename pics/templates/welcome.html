@@ -12,10 +12,19 @@
     h1{
         color: black;
     }
+    #con {
+    letter-spacing: 5px;
+    font-family: 'Almendra';
+    text-decoration: underline;
+    -webkit-text-decoration-color: salmon;
+    text-decoration-color: rgb(139, 94, 88);
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+}
 </style>
 
 <div class="d-flex justify-content-center">
-    <h1 class="text-center my-5 animate__animated animate__fadeIn animate__fadeInDow" id="con">Bienvenue a Pictogram</h1>
+    <h1 class="text-center my-5" id="con">Bienvenue a Pictogram</h1>
     <br><br><br>
     <a href=" {% url 'pictogram' %} " class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Galore</a>
 </div>

@@ -54,7 +54,3 @@ class categories(models.Model):
     def delete_categories(self):
         self.delete()
 
-    @classmethod
-    def search_by_categories(cls,search_term):
-        pics = cls.objects.filter(categories_icontains=search_term)
-        return pics
