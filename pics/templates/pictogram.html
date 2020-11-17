@@ -41,7 +41,7 @@
         {% for image_item in images %}
         <div class="col-sm-4 my-4 animate__animated animate__fadeIn animate__delay-1s animate__animated animate__fadeIn animate__fadeInUp">
             <div class="card" style="width: 25rem;" id="transparent">
-                <img src="{{ image_item.image.url }}" class="card-img-top" alt="...">
+                <img src="{{ image_item.images.url }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title ml-2">{{ image_item.name }}</h5>
                     <a href="{% url 'show' image_item.id %}" class=" my-3 card-link"><button type="button" class="btn btn-deep-orange">View</button></a>

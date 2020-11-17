@@ -10,8 +10,6 @@ class Pics(models.Model):
     categories =models.ForeignKey('categories',on_delete=models.CASCADE, blank=True)
     images = CloudinaryField(default = 'default.jpg')
 
-
-
     def __str__(self):
         return self.name
     

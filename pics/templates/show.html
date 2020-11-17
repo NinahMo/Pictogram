@@ -46,7 +46,7 @@
 
     <div class="row">
         <div class="col-md-6 mb-4 animate__animated animate__fadeInLeftBig">
-            <img src='{{image.image.url}}' class="img-fluid z-depth-1-half" alt="">
+            <img src='{{image.images.url}}' class="img-fluid z-depth-1-half" alt="">
         </div>
         <!--Grid column-->
         <div class="card-body my-1">
@@ -56,11 +56,11 @@
             <ul class="card-text list-group list-group-flush animate__animated animate__fadeInUp" style="width: 500px;color: black;
             font-family: Almendra;
             font-size: 24px;">
-                <li class="list-group-item" id="transparent"> <i class="fas fa-audio-description"></i> Description: {{image.descripton}}</li>
+                <li class="list-group-item" id="transparent"> <i class="fas fa-audio-description"></i> Description: {{image.description}}</li>
                 <li class="list-group-item" id="transparent"> <i class="fas fa-search-location"></i> Location: {{image.location}}</li>
                 <li class="list-group-item" id="transparent"> <i class="fas fa-copy"></i> Copy:
                     <div class="d-flex justify-content-center">
-                        <input class="form-control" type="text" value="{{image.image}}" id="myInput" style="color: black; background-color: transparent; font-size: 16px;">
+                        <input class="form-control" type="text" value="{{image.images}}" id="myInput" style="color: black; background-color: transparent; font-size: 16px;">
                         <button type="button" style="width: 150px;" class="btn btn-dark-green" onclick="myFunction()">Copy Url</button>
                     </div>
                    
