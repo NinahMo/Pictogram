@@ -2,21 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cute+Font|Merienda");
 @import url("https://fonts.googleapis.com/css?family=Akronim");
 /* Homepage */
-#particles-js {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/mountains.jpg);
-    height: 95vh;
-    background-position: center;
-    background-size: cover;
-    color: snow;
-}
 
 #con {
     text-shadow: snow;
     letter-spacing: 5px;
     font-family: "Akronim";
-    text-decoration: underline;
-    -webkit-text-decoration-color: salmon;
-    text-decoration-color: rgb(139, 94, 88);
-    -webkit-text-decoration-style: wavy;
-    text-decoration-style: wavy;
+
 }
