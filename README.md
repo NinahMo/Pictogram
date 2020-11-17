@@ -21,7 +21,7 @@ postgres
 
 ## Known bugs
 
-None so far but i'll be glad to be communicated to if there is one
+None so far but i'll be glad to be communicated to if there is one        
 
 ## Technologies Used
 * Python3.8
